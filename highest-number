@@ -1,0 +1,21 @@
+#include 
+using namespace std;
+
+const int SENTINEL = 0;
+
+int main() {
+    int highest = 0;
+    int value;
+    while (true) {
+        cout << "?";
+        cin >> value;
+        if (value == SENTINEL) break;
+        else if (value > highest) {
+            highest = value;
+        }
+    }
+    cout << highest << endl;
+    return 0;
+}
+
+
